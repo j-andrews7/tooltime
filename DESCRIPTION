@@ -1,0 +1,22 @@
+Package: tooltime
+Title: A Toolbox of Bioinformatics Utilities
+Version: 0.0.0.9000
+Authors@R: 
+    person("Jared", "Andrews", , "jared.andrews@stjude.org", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-0780-6248"))
+Description: tooltime is a set of generally useful bioinformatics utilities. 
+             Mostly, it is comprised of convenient wrapper functions that build on common 
+             annotation, analysis, and plotting packages.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.1
+Imports:
+    mygene
+Suggests: 
+    knitr,
+    rmarkdown,
+    testthat (>= 3.0.0)
+URL: https://github.com/j-andrews7/tooltime
+VignetteBuilder: knitr
+Config/testthat/edition: 3

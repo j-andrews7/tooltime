@@ -1,0 +1,35 @@
+---
+title: "How to use tooltime"
+author: "Jared Andrews"
+date: "2022-09-22"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{using-tooltime}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Quick start
+
+```{r}
+library(tooltime)
+
+# Almost any type of gene identifier will work. Only the top hit for each query will be returned.
+genes <- c(1017, "ENSG00000148795", "CDK2", "goobledegook")
+
+summaries <- get_summaries(genes)
+
+summaries
+```
+
+## sessionInfo
+
+```{r}
+sessionInfo()
+```
+
+
